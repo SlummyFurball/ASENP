@@ -18,10 +18,10 @@ const Header = () => {
 
   return (
     <header className="fixed w-full z-50 pt-4 px-4">
-      <div className={`max-w-6xl mx-auto transition-all duration-500 ${
+      <div className={`max-w-7xl mx-auto transition-all duration-500 ${
         isScrolled 
-          ? 'bg-lightgrey/95 backdrop-blur-md shadow-2xl rounded-full px-6 py-3' 
-          : 'bg-lightgrey/90 backdrop-blur-sm shadow-lg rounded-full px-8 py-4'
+          ? 'bg-lightgrey/95 backdrop-blur-md shadow-2xl rounded-full px-8 py-3' 
+          : 'bg-lightgrey/90 backdrop-blur-sm shadow-lg rounded-full px-12 py-4'
       }`}>
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
@@ -37,17 +37,17 @@ const Header = () => {
           </div>
 
           {location.pathname === '/' ? (
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden md:flex items-center space-x-10">
               <a href="#inicio" className="text-gray-700 hover:text-[#00cbff] transition-colors font-medium">Inicio</a>
               <a href="#servicios" className="text-gray-700 hover:text-[#00cbff] transition-colors font-medium">Servicios</a>
               <a href="#nosotros" className="text-gray-700 hover:text-[#00cbff] transition-colors font-medium">Nosotros</a>
               <a href="#contacto" className="text-gray-700 hover:text-[#00cbff] transition-colors font-medium">Contacto</a>
-              <a href="/citas" className="bg-[#00cbff] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#00b8e6] transition-all duration-300 transform hover:scale-105">
+              <a href="/citas" className="bg-[#00cbff] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#00b8e6] transition-all duration-300 transform hover:scale-105">
                 Agenda una Cita
               </a>
             </nav>
           ) : (
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden md:flex items-center space-x-10">
               <a href="/" className="text-gray-700 hover:text-[#00cbff] transition-colors font-medium">Inicio</a>
               <a href="/#servicios" className="text-gray-700 hover:text-[#00cbff] transition-colors font-medium">Servicios</a>
               <a href="/#nosotros" className="text-gray-700 hover:text-[#00cbff] transition-colors font-medium">Nosotros</a>
@@ -55,7 +55,7 @@ const Header = () => {
             </nav>
           )}
 
-          <div className={`hidden lg:flex items-center space-x-4 transition-all duration-300 ${
+          <div className={`hidden lg:flex items-center space-x-6 transition-all duration-300 ${
             isScrolled || location.pathname !== '/' ? 'opacity-0 w-0 overflow-hidden' : 'opacity-100'
           }`}>
             <div className="flex items-center space-x-2 text-sm text-gray-600 hover:text-brand-blue transition-colors">
