@@ -60,7 +60,7 @@ const Header = () => {
           }`}>
             <div className="flex items-center space-x-2 text-sm text-gray-600 hover:text-brand-blue transition-colors">
               <Phone className="w-4 h-4" />
-              <span>809-487-6361</span>
+              <span>(849)655-2502</span>
             </div>
             <div className="flex items-center space-x-2 text-sm text-gray-600 hover:text-brand-blue transition-colors">
               <Mail className="w-4 h-4" />
