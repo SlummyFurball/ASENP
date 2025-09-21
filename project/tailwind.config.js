@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         'brand-blue': '#00cbff',
-        'lightgrey': '#FFFFFF',
+        'lightgrey': '#F5F5F5',
       },
     },
   },
