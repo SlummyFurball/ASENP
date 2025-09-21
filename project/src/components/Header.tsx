@@ -29,7 +29,7 @@ const Header = () => {
               <LazyImage 
                 src="/logo-asenp--transparente1-14.png" 
                 alt="ASENP Quality Consulting" 
-                className={`w-auto transition-all duration-300 ${
+                className={`w-auto transition-all duration-300 drop-shadow-md hover:drop-shadow-lg ${
                   isScrolled ? 'h-12' : 'h-14'
                 }`}
               />
