@@ -58,18 +58,18 @@ const Header = () => {
           <div className={`hidden lg:flex items-center space-x-6 transition-all duration-300 ${
             isScrolled || location.pathname !== '/' ? 'opacity-0 w-0 overflow-hidden' : 'opacity-100'
           }`}>
-            <div className="flex items-center space-x-2 text-sm text-gray-600 hover:text-brand-blue transition-colors">
+            <div className="flex items-center space-x-2 text-sm text-gray-600 hover:text-[#00cbff] transition-colors">
               <Phone className="w-4 h-4" />
-              <span>849-655-2502</span>
+              <span>809-487-6361</span>
             </div>
-            <div className="flex items-center space-x-2 text-sm text-gray-600 hover:text-brand-blue transition-colors">
+            <div className="flex items-center space-x-2 text-sm text-gray-600 hover:text-[#00cbff] transition-colors">
               <Mail className="w-4 h-4" />
               <span>asenpqc01@gmail.com</span>
             </div>
           </div>
 
           <button
-            className="md:hidden text-gray-700 hover:text-brand-blue transition-colors"
+            className="md:hidden text-gray-700 hover:text-[#00cbff] transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
