@@ -77,7 +77,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-[#00cbff]" />
                 <a href="mailto:asenpqc01@gmail.com" className="hover:text-[#00cbff] transition-colors duration-200">
-                  (849)655-2502
+                  mailto:asenpqc01@gmail.com
                 </a>
               </div>
               
